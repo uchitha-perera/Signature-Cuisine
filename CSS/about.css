@@ -1,0 +1,148 @@
+
+.banner
+{
+    background: url('../Pictures/food-about.jpg');
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: grid;
+    place-content:center;
+    background-attachment: fixed;
+       
+}
+
+.banner > h1{
+    font-size: 90px;
+    color: white;
+    margin-bottom: 200px;
+}
+/*about style start*/
+section
+{
+    padding: 8rem 9%;
+}
+
+.heading
+{
+    text-align: center;
+    color: var(--black);
+    font-size: 4.5rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+
+.sub-heading
+{
+    text-align: center;
+    color: var(--light-color);
+    font-size: 2.5rem;
+    padding: .5rem 2rem;
+    font-weight: 300;
+    margin-bottom: 4rem;
+    background: var(--black);
+    display: inline-block;
+}
+
+.paragraph
+{
+    font-size: 20px;
+}
+
+.welcome .box-container
+{
+    display: flex;
+    gap: 1.5rem;
+
+}
+
+.welcome .box-container .box
+{
+    width: 33%;
+    background: var(--black);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+.welcome .box-container .box .image
+{
+    height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.welcome .box-container .box .image img
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.welcome .box-container .box .image:hover img
+{
+   transform: scale(1.1);
+    
+}
+
+.welcome .box-container .box .content
+{
+    padding: 2rem;
+    padding-top: 2rem;
+}
+
+.welcome .box-container .box .content h3
+{
+    color: var(--light-color);
+    font-size: 2.2rem;
+    font-weight: 400;
+}
+
+.welcome .box-container .box .content p
+{
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: .5rem 0;
+    line-height: 1.5;
+}
+/*about style end*/
+
+@media (max-width: 768px)
+{
+.welcome .box-container
+    {
+        flex-wrap: wrap;
+    }
+
+    .welcome .box-container .box
+    {
+        width: 100%;
+    }
+
+    .banner
+    {
+        height: 60vh;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .banner h1
+    {
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 7rem;
+        margin-top: 0px;
+        color: var(--light-color);   
+        
+    }
+
+    .paragraph
+    {
+        text-align: center;
+    }
+
+}
+

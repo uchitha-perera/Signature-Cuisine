@@ -1,0 +1,104 @@
+
+
+
+.heading
+{
+    text-align: center;
+    color: var(--black);
+    font-size: 5rem;
+    padding-bottom: 2rem;
+    padding-bottom: 0%;
+    padding-top: 20rem;
+}
+
+.dishes .box-container .box img
+{
+    width: 70%;
+}
+
+.dishes .box-container .box img:hover
+{
+    transform: scale(1.1);
+}
+
+.dishes .box-container
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(28rem, 350px));
+    gap: 8rem;
+    justify-content: center;
+    padding-top: 0px;
+    
+}
+
+.dishes .box-container .box
+{
+    padding: 2.5rem;
+    background: #fff;
+    border-radius: .5rem;
+    border: .1rem solid rgba(0, 0, 0, .2);
+    box-shadow: var(--box-shadow);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.box-container > .box.shrink{
+    display: none;
+}
+
+.box-container > .box.expand{
+    display: block;
+}
+
+
+.dishes .box-container .box h3
+{
+    color: var(--black);
+    font-size: 2.5rem;
+}
+
+.para
+{
+    font-size: large;
+}
+
+
+.dishes .box-container .box span
+{
+    color: var(--black);
+    font-weight: bolder;
+    font-size: 2.5rem;
+    
+}
+
+
+@media (max-width: 768px)
+{
+    .banner
+    {
+        height: 60vh;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    .banner h1
+    {
+        flex-wrap: wrap;
+        text-align: left;
+        font-size: 7rem;
+        margin-top: 100px;
+        margin-left: 50px;
+        color: white;   
+        
+    }
+
+    .buttons button
+    {
+        width: 100%;
+        display: block;
+    }
+
+    
+}

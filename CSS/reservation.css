@@ -1,0 +1,159 @@
+.banner
+{
+    background: url('../Pictures/cutlery-set.jpg');
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    background-attachment: fixed;
+       
+}
+
+.banner > h1{
+    font-size: 90px;
+    color: white;
+    margin-left: 800px;
+}
+
+/*rservation style start*/
+
+body
+{
+    background: var(--light-color);
+}
+
+.reservation
+{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 130px;
+}
+.reservation .image
+{
+    width: 40%;
+    background: url(../Pictures/book-table.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding-top: 9rem;
+}
+
+.heading
+{
+    text-align: center;
+    color: var(--black);
+    font-size: 4.5rem;
+    padding-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+}
+
+.sub-heading
+{
+    text-align: center;
+    color: var(--light-color);
+    font-size: 2.5rem;
+    padding: .5rem 2rem;
+    font-weight: 300;
+    margin-bottom: 4rem;
+    background: var(--black);
+    display: inline-block;
+}
+
+.reservation .form
+{
+    background: #181818;
+    width: 45%;
+    padding: 9rem 7%;
+}
+
+.reservation .form h1
+{
+    color: #fff;
+}
+
+.reservation .form-holder
+{
+    display:flex;
+    grid-gap: 6rem;
+    width: 100%;
+   
+}
+
+.form-holder .for
+{
+    margin-top: 0px;
+    padding: 4px;
+}
+
+.form .form-holder .for .ba
+{
+    margin-top: 27px;
+}
+
+.form .form-holder .for .sa
+{
+    margin-top: 0px;
+}
+
+.form .form-holder .pa
+{
+    margin-top: 4px;
+}
+
+.reservation .form form input,
+.reservation .form form select
+{
+    display: block;
+    margin: 3rem 2rem;
+    width: 100%;
+    background: none;
+    border-bottom: .1rem solid #b7b3b3;
+    color: #b7b3b3;
+    font-size: 2rem;
+    font-weight: 300;
+   
+}
+
+.reservation .form form input:placeholder
+{
+    color: #b7b3b3;
+}
+/*rservation style end*/
+
+@media (max-width: 768px)
+{
+    .banner h1
+    {
+        text-align: center;
+        margin-left: 0px;
+        color:burlywood;
+    }
+
+    .reservation
+    {
+        margin-left: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .reservation .image
+    {
+        width: 0;
+        
+        
+    }
+    .reservation .form
+    {
+        width: 100%;
+    }
+
+    .reservation .form .form-holder
+    {
+        display: block;
+    }
+}
